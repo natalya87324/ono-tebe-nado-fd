@@ -1,1 +1,60 @@
-/* место для вашего кода */
+/* Шапка */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  font-size: 18px;
+  padding: 92px 50px 96px;
+}
+
+.header__menu {
+  text-transform: lowercase;
+}
+
+.header__logo {
+  display: block;
+  width: 130px;
+  height: 105px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 33px;
+}
+
+.header__link {
+  text-underline-offset: 4px;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullet {
+  list-style: none;
+}
+
+.header__address {
+  justify-self: end;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35;
+  margin: 0;
+  max-width: 238px;
+}
+
+.address__link {
+  text-underline-offset: 4px;
+}
+
