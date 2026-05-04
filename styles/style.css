@@ -1,3 +1,27 @@
+/* Общие стили */
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35;
+  margin: 0;
+  max-width: 238px;
+}
+
+.address__link {
+  text-underline-offset: 4px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
 /* Шапка */
 
 .header {
@@ -15,20 +39,11 @@
 .header__logo {
   display: block;
   width: 130px;
-  height: 105px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 33px;
-}
-
-.header__link {
-  text-underline-offset: 4px;
-}
-
-.header__link_active {
-  text-decoration: none;
+  gap: 32px;
 }
 
 .header__links-list-item {
@@ -39,22 +54,92 @@
   list-style: none;
 }
 
+.header__link {
+  text-underline-offset: 4px;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
 .header__address {
   justify-self: end;
 }
 
-.address {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 1.35;
-  margin: 0;
-  max-width: 238px;
+/* Обложка */
+
+.cover {
+  position: relative;
+  min-height: 757px;
+  padding: 165px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
 }
 
-.address__link {
-  text-underline-offset: 4px;
+.cover__title {
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1.15;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 106px;
 }
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_left {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.aligned-text_center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.27;
+  word-spacing: 19px;
+}
+
+.bet-button {
+  all: unset;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px 32px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+
+
 
