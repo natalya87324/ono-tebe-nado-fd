@@ -138,9 +138,10 @@
   border: 1px solid #fff;
   padding: 12px 32px;
   text-align: center;
+  color: #fff;
   background-color: transparent;
+  text-transform: uppercase;
   cursor: pointer;
-  all: unset;
 }
 
 /* Секция с карточками лотов */
@@ -281,6 +282,7 @@
   justify-self: center;
   font-size: 18px;
   text-align: center;
+  text-transform: lowercase;
 }
 
 .footer__menu-link {
